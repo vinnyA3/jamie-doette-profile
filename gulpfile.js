@@ -10,12 +10,12 @@ browserSync.init({
 browserSync.stream();
 
 gulp.task('default', ['styles'], function() {
-	gulp.watch('sass/main.scss',['styles']);
+	gulp.watch('sass/**/*.scss',['styles']);
 	gulp.watch('/index.html').on('change', browserSync.reload);
 });
 
 gulp.task('styles', function() {
-	gulp.src('sass/main.scss')
+	gulp.src('sass/**/*.scss')
 			.pipe(sass({
 				outputStyle: 'compressed'
 			}).on('error', sass.logError))
