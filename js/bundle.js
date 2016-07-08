@@ -1,80 +1,4 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-'use strict';
-
-var _jquery = require('jquery');
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) {
-	return obj && obj.__esModule ? obj : { default: obj };
-}
-
-// export for others scripts to use
-//window.$ = $;
-//window.jQuery = jQuery;
-
-(function ($, document, window) {
-
-	$(document).ready(function () {
-
-		$(window).scroll(function () {
-
-			var window_scroll = $(this).scrollTop();
-
-			if (window_scroll > 200) {
-				$('.navbar').fadeIn(500);
-			} else {
-				$('.navbar').fadeOut(500);
-			}
-
-			$('.intro-foreground').css({
-				'transform': 'translate(0px, +' + window_scroll / 30 + '%)'
-			});
-		});
-
-		$('a[href*="#"]:not([href="#"])').click(function () {
-			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-				if (target.length) {
-					$('html, body').animate({
-						scrollTop: target.offset().top
-					}, 1000);
-					return false;
-				}
-			}
-		});
-
-		//form error handling
-
-		$('.contact-form').submit(function (e) {
-			e.preventDefault();
-
-			$('.submit-message').html('');
-
-			var error = '';
-
-			if ($('.contact-form').find('#name').val() == '') {
-				error += 'Please enter your name!<br>';
-			}
-			if ($('.contact-form').find('#email').val() == '') {
-				error += 'Please enter your email!<br>';
-			}
-			if ($('.contact-form').find('#message').val() == '') {
-				error += 'Please enter a message!';
-			}
-
-			if (error != '') {
-				$('.submit-message').html('<p>' + error + '</p>');
-			} else {
-				$('.contact-form')[0].reset();
-				$('.submit-message').html('<p>I\'ll get back to you soon!</p>');
-			}
-		});
-	});
-})(_jquery2.default, document, window);
-
-},{"jquery":2}],2:[function(require,module,exports){
 /*eslint-disable no-unused-vars*/
 /*!
  * jQuery JavaScript Library v3.1.0
@@ -10150,4 +10074,80 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}]},{},[1]);
+},{}],2:[function(require,module,exports){
+'use strict';
+
+var _jquery = require('jquery');
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) {
+	return obj && obj.__esModule ? obj : { default: obj };
+}
+
+// export for others scripts to use
+//window.$ = $;
+//window.jQuery = jQuery;
+
+(function ($, document, window) {
+
+	$(document).ready(function () {
+
+		$(window).scroll(function () {
+
+			var window_scroll = $(this).scrollTop();
+
+			if (window_scroll > 200) {
+				$('.navbar').fadeIn(500);
+			} else {
+				$('.navbar').fadeOut(500);
+			}
+
+			$('.intro-foreground').css({
+				'transform': 'translate(0px, +' + window_scroll / 30 + '%)'
+			});
+		});
+
+		$('a[href*="#"]:not([href="#"])').click(function () {
+			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					$('html, body').animate({
+						scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+			}
+		});
+
+		//form error handling
+
+		$('.contact-form').submit(function (e) {
+			e.preventDefault();
+
+			$('.submit-message').html('');
+
+			var error = '';
+
+			if ($('.contact-form').find('#name').val() == '') {
+				error += 'Please enter your name!<br>';
+			}
+			if ($('.contact-form').find('#email').val() == '') {
+				error += 'Please enter your email!<br>';
+			}
+			if ($('.contact-form').find('#message').val() == '') {
+				error += 'Please enter a message!';
+			}
+
+			if (error != '') {
+				$('.submit-message').html('<p>' + error + '</p>');
+			} else {
+				$('.contact-form')[0].reset();
+				$('.submit-message').html('<p>I\'ll get back to you soon!</p>');
+			}
+		});
+	});
+})(_jquery2.default, document, window);
+
+},{"jquery":1}]},{},[2]);
