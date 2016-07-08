@@ -55,7 +55,7 @@ gulp.task('browserify', () => {
 		.transform(["babelify", {presets: ["es2015"]}])
 		.bundle()
 		.pipe(source('bundle.js'))
-		.pipe(gulp.dest('js'));
+		.pipe(gulp.dest('src/js'));
 });
 
 gulp.task('watch', () => {
