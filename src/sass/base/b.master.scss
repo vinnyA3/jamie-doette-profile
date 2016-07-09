@@ -32,7 +32,13 @@ label {
 	width: 100%;
 }
 
-/* RESET BOOTSTRAP STYLE */
-.nav .navbar-nav > li:hover {
+/* RESET NAV LINKS BOOTSTRAP STYLE */
+.nav > li > a:focus,
+.nav > li > a:hover {
 	background: transparent;
+	color: inherit;
+}
+
+.nav > li > a:hover {
+	border-bottom: 1px solid #fff;
 }
