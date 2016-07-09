@@ -3,8 +3,6 @@ Jamie Doette
 
 Description: A personal website/portfolio for Jamie Doette Photography
 
-Status: In Development ...
+Status: Complete as of now.  JS code refactoring in near future
 
-Visit Site: [https://vinnya3.github.io/jamie-doette-profile/]
-
-!!!  JS needs major refactoring ! - split to modules
+Visit Site: https://vinnya3.github.io/jamie-doette-profile/
