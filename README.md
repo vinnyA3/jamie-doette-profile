@@ -7,4 +7,4 @@ Status: In Development ...
 
 Visit Site: [https://vinnya3.github.io/jamie-doette-profile/]
 
-<img here>
+!!!  JS needs major refactoring ! - split to modules
