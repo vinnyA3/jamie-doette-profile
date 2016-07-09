@@ -1,0 +1,21 @@
+.button {
+	padding: .9em 1.3em .9em 1.3em;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #fff !important;
+}
+
+.button-regular {
+	border: 3px solid #fff;
+	background: transparent;
+	color: black;
+
+	&:hover {
+		background: #fff;
+		color: black !important;
+	}
+}
+
+.submit-message {
+	color: red;
+}

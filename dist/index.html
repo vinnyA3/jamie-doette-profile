@@ -15,17 +15,19 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 			<div class="wrapper">
+
 			<nav class="navbar navbar-fixed-top">
+
+				<div class="navbar-drawer">
+					<p>Hello mate</p>
+				</div>
+
 		  <div class="container-fluid">
+
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#intro">Jamie Doette</a>
+		      <a class="navbar-brand" href="#intro"><img class="img-responsive" src="images/jamie-logo.png"></a>
+					<div class="navbar-burger pull-right"><i class="fa fa-bars"></i></div>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -42,7 +44,15 @@
 			<!--<div class="intro-header vertical-center">
 				<h1>Hello World!</h1>
 			</div> -->
-			<div class="intro-foreground"></div>
+			<div class="intro__head">
+				<h1>
+					<span class='intro-hello'>Hi, I'm Jamie Doette.</span><br><br>
+					<span class='intro-photo'>Photographer.</span><br><br>
+					<span class='intro-nomad'>Vagabond.</span>
+				</h1>
+			</div>
+
+			<div class="intro__foreground"></div>
 		</div> <!-- /.intro-container -->
 
 		<div class="main-container">
@@ -61,35 +71,35 @@
 			<div class="gallery">
 				<div class="gallery__section">
 					<div class="gallery__text">
-						<h2 class="gallery__text">Title Here</h2>
+						<h2>Title Here</h2>
 						<p>This is some text for the picture brah</p>
 					</div>
 				</div>
 
 				<div class="gallery__section">
 					<div class="gallery__text">
-						<h2 class="gallery__text">Title Here</h2>
+						<h2>Title Here</h2>
 						<p>This is some text for the picture brah</p>
 					</div>
 				</div>
 
 				<div class="gallery__section">
 					<div class="gallery__text">
-						<h2 class="gallery__text">Title Here</h2>
+						<h2>Title Here</h2>
 						<p>This is some text for the picture brah</p>
 					</div>
 				</div>
 
 				<div class="gallery__section">
 					<div class="gallery__text">
-						<h2 class="gallery__text">Title Here</h2>
+						<h2>Title Here</h2>
 						<p>This is some text for the picture brah</p>
 					</div>
 				</div>
 
 				<div class="gallery__section">
 					<div class="gallery__text">
-						<h2 class="gallery__text">Title Here</h2>
+						<h2>Title Here</h2>
 						<p>This is some text for the picture brah</p>
 					</div>
 				</div>
@@ -99,7 +109,7 @@
 
 		<div id="contact" class="container contact-container">
 			<div class="row vertical-center">
-				<div class="col-md-6 col-md-offset-3 text-center">
+				<div class="col-xs-12 col-sm-6 col-md-6 text-center">
 					<h2>Get In Touch!</h2>
 					<form class="contact-form">
 						<label for="name">
@@ -115,12 +125,23 @@
 						<div class="submit-message"></div>
 					</form>
 				</div>
+
+				<div class="hidden-xs col-sm-6 col-md-6">
+					<div class="polaroid">
+						<div class="polaroid__image"></div>
+					</div>
+				</div>
+
 			</div>
 		</div> <!-- /.contact-container -->
 
 		<footer class="main-footer text-center">
-			<p class="lead pull-left"><span class="">JD.Photography</span></p>
-			<p class="lead pull-right"><span class="">vinnya3</span></p>
+			<p class="pull-left"><span class="">Jamie Doette Photography<i class="fa fa-copyright"></i></span></p>
+			<ul class="footer-social pull-right">
+				<li><a href="#intro"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#intro"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="#intro"><i class="fa fa-twitter"></i></a></li>
+			</ul>
 		</footer> <!-- /.main-footer -->
 
 		</div> <!-- /.main-container -->

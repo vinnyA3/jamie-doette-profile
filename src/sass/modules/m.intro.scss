@@ -1,0 +1,52 @@
+.intro-container {
+	width: 100%;
+	/* display: table; */
+	position: relative;
+	margin: 0;
+	height: 600px;
+  background: #000;
+	background: url('../images/big-ridge-opt.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	overflow: hidden;
+
+	@media screen and (max-width: 465px) {
+		height: 400px;
+	}
+
+}
+
+/* headings for intro__head */
+.intro-head,
+.intro-photo,
+.intro-nomad {
+	display: none;
+}
+
+.intro__head {
+	margin: 0;
+	padding: .5em;
+	font-weight: bolder;
+	font-size: 5em;
+	color: rgb(12, 12, 12) !important;
+	float:right;
+	text-align: right;
+}
+
+.intro__foreground {
+	width: 960px;
+  height: 733px;
+  background-image: url('../images/jamie-doette-opt.png');
+	background-position: center;
+	background-size: contain;
+  position:absolute;
+	left: 0;
+	bottom: 0;
+  top: -86px;
+
+	@media screen and (max-width: 465px) {
+		display: none;
+	}
+
+}

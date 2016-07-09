@@ -59,5 +59,5 @@ gulp.task('browserify', () => {
 });
 
 gulp.task('watch', () => {
-	gulp.watch("js/main.js", ["browserify", "scripts"]);
+	gulp.watch("src/js/main.js", ["browserify", "scripts"]);
 });

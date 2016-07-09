@@ -1,8 +1,10 @@
 /* BASE */
-@import './base/base.master';
+@import './base/b.master';
 /* UTILS */
-@import './utils/utils.master';
+@import './utils/u.master';
 /* LAYOUT */
-@import './layout/layout.master';
+@import './layout/l.master';
 /* COMPONENTS */
-@import './modules/module.master';
+@import './modules/m.master';
+/* STATE */
+@import './state/s.master';
